@@ -4,6 +4,10 @@ Utilities and supporting library for controlling original Lytro lightfield camer
 
 See the accompanying writeup at https://github.com/ea/lytro_unlock
 
+Code is split into payloads, commands, transactions and connections. Commands are either requests or responses and relevant flags are set mostly automatically. For more complicated commands, they override the default behaviour from `Message` class. Some commands have payloads that can be parsed. Transactions wrap a command or multiple commands and handle sending requests and receiving responses via connections. Only currently implemented connection is over WiFi. 
+
+
+
 I've implemented a number of commands and set a scafolding for all of them. I've made a couple of utilities that show how you can interact with the camera over WiFi. 
 	
 #### Shell
