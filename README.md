@@ -25,7 +25,6 @@ optional arguments:
 
 A simple shell will connect to the camera over WiFi, unlock it, present you with stdout and expect commands to be sent. Whenever a command is sent, output is synced back. Note that by default, error/logging is also emited which can be annoying so it's disabled by default, use `-v` to enable that. 
 	
-<img src="screenshots/08_uart_logs.png" width="800">
 	
 #### Demo
 
